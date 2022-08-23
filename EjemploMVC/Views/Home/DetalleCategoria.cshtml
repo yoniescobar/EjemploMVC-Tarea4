@@ -1,0 +1,25 @@
+﻿@model AdventureWorksNS.Data.ProductCategory
+
+@{
+    ViewData["Title"] = "Detalle de Categoria - " + @Model.Name;
+}
+
+<h2>Detalle de Categoria</h2>
+<hr />
+
+<div>
+    <table class="table table-striped">
+  <thead>
+    <tr class="table-danger">
+      <th scope="col">ID Producto Categoria</th>
+      <th scope="col">Nombre de Categoria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-warning">
+      <th scope="row">@Model.ProductCategoryId</th>
+      <td>@Model.Name</td>
+    </tr>
+  </tbody>
+</table>
+</div>
